@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research briefs</title>
+<title>Skills &amp; Agents Radar — August 22, 2026</title>
 <style>
   @font-face {
     font-family: 'Fraunces';
@@ -13,7 +13,11 @@
     font-display: swap;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #FCFCFB; color: #2E2C27; font-family: -apple-system, "Segoe UI", sans-serif; }
+  body {
+    background: #FCFCFB;
+    color: #2E2C27;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
   .band-top { background: #F9F9F7; border-bottom: 1px solid #E1E1DF; padding: 56px 24px; }
   .band-bottom { background: #FCFCFB; padding: 48px 24px; }
   .inner { max-width: 860px; margin: 0 auto; }
@@ -24,11 +28,41 @@
     font-size: 40px;
     line-height: 1.25;
     max-width: 780px;
+    margin-bottom: 34px;
   }
   @media (max-width: 640px) { h1 { font-size: 30px; } }
 
-  section.series { max-width: 860px; margin: 0 auto 44px auto; }
-  section.series:last-child { margin-bottom: 0; }
+  .drawing { width: 100%; height: auto; display: block; margin-bottom: 30px; }
+
+  .acts {
+    display: flex;
+    gap: 32px;
+  }
+  @media (max-width: 640px) {
+    .acts { flex-direction: column; gap: 20px; }
+  }
+  .act {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #E4E3DC;
+  }
+  .act:first-child { padding-left: 0; border-left: none; }
+  @media (max-width: 640px) {
+    .act { padding-left: 0; border-left: none; padding-top: 16px; border-top: 1px solid #E4E3DC; }
+    .act:first-child { padding-top: 0; border-top: none; }
+  }
+  .act-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2E2C27;
+    margin-bottom: 8px;
+  }
+  .act-sentence { font-size: 14.5px; color: #6B6A63; line-height: 1.5; }
+
+  section.brief-section { max-width: 860px; margin: 0 auto 44px auto; }
+  section.brief-section:last-child { margin-bottom: 0; }
   h2 {
     font-size: 13px;
     font-weight: 600;
@@ -49,31 +83,214 @@
     padding-top: 1px;
   }
   .item-body { flex: 1; }
-  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; text-decoration: none; }
-  .item-title:hover { text-decoration: underline; }
+  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; }
+  a.item-title { text-decoration: none; }
+  a.item-title:hover { text-decoration: underline; }
   .item-text { font-size: 14.5px; color: #6B6A63; line-height: 1.6; }
+  .item-text a { color: #6B6A63; text-decoration: underline; }
 </style>
 </head>
 <body>
 
   <div class="band-top"><div class="inner">
-    <div class="meta">Research briefs &middot; maintained automatically</div>
-    <h1>One quiet page a week, drawn from whatever the field actually did.</h1>
+    <div class="meta">Saturday &middot; August 22, 2026 &middot; Edition 1 &middot; 45 venues scanned &middot; 25 new finds</div>
+    <h1>MCP went stateless this week, and the cloud vendors said yes before the changelog finished loading.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,128 C40,122 70,105 110,92 C150,79 175,60 210,55 C230,52 250,58 270,52 C300,45 330,50 360,58 C385,64 400,72 420,80 C450,92 470,105 490,116 C515,120 545,116 565,104 C590,90 610,90 630,88 C660,86 680,84 705,84 C730,84 750,90 770,96 C800,104 820,108 840,110"
+            fill="none" stroke="#2E2C27" stroke-width="1.5" />
+      <circle cx="100" cy="95" r="5" fill="#B4B3A8" />
+      <circle cx="140" cy="78" r="7" fill="#2E2C27" />
+      <circle cx="160" cy="73" r="5" fill="#B4B3A8" />
+      <circle cx="180" cy="65" r="6" fill="#B4B3A8" />
+      <circle cx="210" cy="55" r="12" fill="#2E2C27" />
+      <circle cx="250" cy="55" r="6" fill="#B4B3A8" />
+      <circle cx="270" cy="52" r="11" fill="#2E2C27" />
+      <circle cx="350" cy="60" r="5" fill="#B4B3A8" />
+      <circle cx="390" cy="68" r="8" fill="#2E2C27" />
+      <circle cx="460" cy="100" r="6" fill="#B4B3A8" />
+      <circle cx="490" cy="116" r="13" fill="#C6613F" />
+      <circle cx="700" cy="84" r="5" fill="#B4B3A8" />
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-label">GitHub</div>
+        <div class="act-sentence">obra/superpowers and JuliusBrussee/caveman both cleared six-figure star counts this week &mdash; the same skill format keeps producing outliers with no marketing budget.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Registries</div>
+        <div class="act-sentence">Three new marketplaces &mdash; aiskill.market, agensi.io, augmentclaude.com &mdash; went live in the same window, one of them explicitly paid.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Protocol</div>
+        <div class="act-sentence">MCP shed its sessions, and the cloud vendors that host agent traffic signed on before most developers finished reading the changelog.</div>
+      </div>
+    </div>
   </div></div>
 
   <div class="band-bottom"><div class="inner">
 
-    <section class="series">
-      <h2>Skills &amp; Agents Radar</h2>
+    <section class="brief-section">
+      <h2>Standouts</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">MCP went stateless this week, and the cloud vendors said yes before the changelog finished loading.</div>
+            <a class="item-title" href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP&rsquo;s core protocol finally drops stateful sessions</a>
+            <div class="item-text">The 2026-07-28 release removes the session handshake so any server instance can answer any request behind an ordinary load balancer, and AWS&rsquo;s Bedrock AgentCore and Cloudflare&rsquo;s Agents SDK both shipped support from day zero. Reaction split hard on Hacker News, where one commenter argued the change &ldquo;essentially makes MCP just another REST API endpoint&rdquo; <a href="https://news.ycombinator.com/item?id=49088058">in the discussion thread</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/obra/superpowers">A skills framework passes a quarter-million stars</a>
+            <div class="item-text">Jesse Vincent&rsquo;s agentic-skills methodology bundles test-driven development, subagent-driven workflows and systematic debugging so they auto-activate inside Claude Code. The repo has climbed to 273,216 stars and 23,367 forks <a href="https://claudeskills.info/plugins/obra/superpowers/">per its plugin-marketplace listing</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/JuliusBrussee/caveman">A joke skill that actually cuts token bills</a>
+            <div class="item-text">Caveman rewrites agent replies in clipped, article-free prose, and its own ten-prompt benchmark shows a 65% mean cut in output tokens. The repo has rocketed past 92,000 stars, up from about 54,000 a month earlier, <a href="https://andrew.ooo/posts/caveman-claude-code-skill-token-savings-review/">per an independent review</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">4</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/upstash/context7">The most-installed MCP server keeps compounding</a>
+            <div class="item-text">Upstash&rsquo;s Context7 fetches current, version-specific library docs so agents stop citing deprecated APIs, and the project now carries 61.1k stars and 2.9k forks. It migrated off Redis-backed sessions onto the new stateless MCP core within days of the spec shipping, <a href="https://github.com/upstash/context7/releases">per its release notes</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://aiskill.market/">A free skills marketplace crosses 4,700 listings</a>
+            <div class="item-text">aiskill.market lists skills, agents and workflows with a one-line install command and no signup, now carrying 4,749 free, production-ready listings. It arrives alongside two commercial rivals this window &mdash; Agensi&rsquo;s paid marketplace and AugmentClaude&rsquo;s 800+ hand-curated skills &mdash; <a href="https://www.kdnuggets.com/top-5-agent-skill-marketplaces-for-building-powerful-ai-agents">in a broader survey of the new marketplace crop</a>.</div>
           </div>
         </li>
       </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Gaining traction</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/mattpocock/skills">TypeScript workflow skills keep climbing GitHub</a>
+            <div class="item-text">Matt Pocock&rsquo;s engineering-discipline collection &mdash; grill-me, tdd, diagnose &mdash; sits above 220,000 stars <a href="https://claudeskills.info/plugins/obra/superpowers/">per one marketplace tracker</a>, though third-party counts for it have varied by more than 10x within a single month.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/volcengine/OpenViking">A filesystem for agent memory gains stars</a>
+            <div class="item-text">volcengine/OpenViking stores agent memory, retrieved resources and skills as one browsable <code>viking://</code> filesystem instead of a black-box vector store, and has reached roughly 26,000 stars <a href="https://agentskill.work/en/skills/volcengine/OpenViking">per a third-party skill index</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills">A cybersecurity skill pack is trending</a>
+            <div class="item-text">mukul975/Anthropic-Cybersecurity-Skills packages pentesting and threat-modeling instructions into Claude-loadable skills, and was trending on GitHub this week alongside a broader wave of security-focused skill packs.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">4</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/zouyingcao/agentskills-mcp">An MCP bridge for Claude-format skills</a>
+            <div class="item-text">zouyingcao/agentskills-mcp exposes Claude-format skills as MCP tools so any MCP-compatible client can call them &mdash; a small, 22-star repo, but a working bridge between the two packaging formats.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/ggml-org/llama.cpp">llama.cpp ships agent tool-calling out of the box</a>
+            <div class="item-text">The <code>--tools all</code> flag turns llama.cpp&rsquo;s server into a tool-calling agent runtime with no extra scaffolding, extending agent-style workflows to anyone running local GGUF models.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">6</span>
+          <div class="item-body">
+            <a class="item-title" href="https://registry.modelcontextprotocol.io">The official MCP registry becomes the default index</a>
+            <div class="item-text">Now the canonical discovery layer for public MCP servers, it gained weight this window as the 2026-07-28 spec pushed more servers toward a single listing point &mdash; one of <a href="https://mastra.ai/mcp-registry-registry">26-plus registries a new meta-index now tracks</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">7</span>
+          <div class="item-body">
+            <a class="item-title" href="https://agensi.io">A paid marketplace opens with a security audit</a>
+            <div class="item-text">Agensi scans every submission and splits revenue 70/30 with creators, betting developers will pay for vetted skills the way they pay for App Store apps &mdash; <a href="https://www.agensi.io/learn/skills-marketplace-ai-agents">one of the first commercial skill marketplaces</a> of its kind.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">8</span>
+          <div class="item-body">
+            <a class="item-title" href="https://augmentclaude.com">A hand-curated alternative to the crawler directories</a>
+            <div class="item-text">augmentclaude.com hand-picks its listings instead of auto-indexing GitHub, building out 800+ free skills organized by industry with an anti-spam pitch aimed at developers tired of duplicate listings.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Deep cuts</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/Vincentwei1021/video-shotcraft">A cinematic video generator built as a skill</a>
+            <div class="item-text">video-shotcraft turns Claude Code or Codex into a motion-design studio with 152 shot-recipe cards for Remotion-rendered product videos, and picked up 1,387 stars in five days &mdash; 260 a day, the fastest climb tracked that week <a href="https://enterprisedna.co/resources/ai-pulse/ai-pulse-2026-07-24-video-shotcraft-a-claude-code-codex-skill-for-cinematic-prod/">per a daily AI-news brief</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/luchasarie/bro-skill">A seven-line meme skill outlived its own joke</a>
+            <div class="item-text">The skill&rsquo;s entire instruction is to restate the agent&rsquo;s last message in plain language. The viral dotfiles version reached Hacker News on August 4, while the standalone repo has settled at a modest 134 stars and a single commit, <a href="https://moclaw.ai/blog/best-claude-skills">per a survey of the skill&rsquo;s spread</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/nishilbhave/codeprobe-claude">A nine-agent code reviewer that never edits your files</a>
+            <div class="item-text">CodeProbe dispatches nine domain-expert sub-agents &mdash; security, SOLID, architecture, performance and more &mdash; in parallel and hands back copy-pasteable fix prompts instead of touching code. One practitioner said the read-only design keeps scores &ldquo;much more stable week over week&rdquo; than reviewers that patch their own findings, <a href="https://dev.to/nishilbhave/i-built-a-multi-agent-code-review-skill-for-claude-code-heres-how-it-works-366i#comment-37i1j">in a comment on the writeup</a>.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Meta reads</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://joshmock.com/post/2026-agents-md-as-a-dark-signal/">Why senior engineers flinch at an AGENTS.md file</a>
+            <div class="item-text">One maintainer argues a repo&rsquo;s AGENTS.md file cuts both ways: it&rsquo;s a signal that agents have been let loose unsupervised, but for maintainers fielding unvetted PRs it may also be <a href="https://joshmock.com/post/2026-agents-md-as-a-dark-signal/">&ldquo;the best protection you have&rdquo;</a> against their dumbest mistakes.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://www.infoq.com/news/2026/08/mcp-stateless-gateway/">Stateless MCP quietly turns servers into REST APIs</a>
+            <div class="item-text">The new spec&rsquo;s required headers let a gateway route, throttle and meter agent traffic without ever opening the request body, prompting one Hacker News regular to conclude the standard has arrived back at &ldquo;just send a POST request,&rdquo; <a href="https://www.infoq.com/news/2026/08/mcp-stateless-gateway/">in InfoQ&rsquo;s analysis</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://www.kdnuggets.com/top-5-agent-skill-marketplaces-for-building-powerful-ai-agents">Skill marketplaces are multiplying faster than they compare</a>
+            <div class="item-text">One survey stacks SkillsMP&rsquo;s 425,000+ aggregated skills against LobeHub&rsquo;s 169,739 and agentskill.sh&rsquo;s 110,000+ &mdash; evidence that discovery, not creation, is now the ecosystem&rsquo;s bottleneck, <a href="https://www.kdnuggets.com/top-5-agent-skill-marketplaces-for-building-powerful-ai-agents">in the survey itself</a>.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Venue watch</h2>
+      <p class="item-text">Registries did the loudest work this window: aiskill.market, agensi.io and augmentclaude.com all surfaced as live marketplaces, and the official <a href="https://registry.modelcontextprotocol.io">registry.modelcontextprotocol.io</a> gained ground as the spec update pushed more servers toward a canonical index. GitHub trending stayed thick with skill collections, though star counts for the same repo now vary by 5&ndash;10x across secondary trackers within a single month &mdash; worth treating skeptically until checked against the repo itself.</p>
     </section>
 
   </div></div>
