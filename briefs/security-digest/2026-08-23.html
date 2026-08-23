@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research briefs</title>
+<title>AI Security Digest &mdash; August 23, 2026</title>
 <style>
   @font-face {
     font-family: 'Fraunces';
@@ -13,7 +13,11 @@
     font-display: swap;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #FCFCFB; color: #2E2C27; font-family: -apple-system, "Segoe UI", sans-serif; }
+  body {
+    background: #FCFCFB;
+    color: #2E2C27;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
   .band-top { background: #F9F9F7; border-bottom: 1px solid #E1E1DF; padding: 56px 24px; }
   .band-bottom { background: #FCFCFB; padding: 48px 24px; }
   .inner { max-width: 860px; margin: 0 auto; }
@@ -24,11 +28,41 @@
     font-size: 40px;
     line-height: 1.25;
     max-width: 780px;
+    margin-bottom: 34px;
   }
   @media (max-width: 640px) { h1 { font-size: 30px; } }
 
-  section.series { max-width: 860px; margin: 0 auto 44px auto; }
-  section.series:last-child { margin-bottom: 0; }
+  .drawing { width: 100%; height: auto; display: block; margin-bottom: 30px; }
+
+  .acts {
+    display: flex;
+    gap: 32px;
+  }
+  @media (max-width: 640px) {
+    .acts { flex-direction: column; gap: 20px; }
+  }
+  .act {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #E4E3DC;
+  }
+  .act:first-child { padding-left: 0; border-left: none; }
+  @media (max-width: 640px) {
+    .act { padding-left: 0; border-left: none; padding-top: 16px; border-top: 1px solid #E4E3DC; }
+    .act:first-child { padding-top: 0; border-top: none; }
+  }
+  .act-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2E2C27;
+    margin-bottom: 8px;
+  }
+  .act-sentence { font-size: 14.5px; color: #6B6A63; line-height: 1.5; }
+
+  section.brief-section { max-width: 860px; margin: 0 auto 44px auto; }
+  section.brief-section:last-child { margin-bottom: 0; }
   h2 {
     font-size: 13px;
     font-weight: 600;
@@ -49,48 +83,107 @@
     padding-top: 1px;
   }
   .item-body { flex: 1; }
-  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; text-decoration: none; }
-  .item-title:hover { text-decoration: underline; }
+  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; }
+  a.item-title { text-decoration: none; }
+  a.item-title:hover { text-decoration: underline; }
   .item-text { font-size: 14.5px; color: #6B6A63; line-height: 1.6; }
+  .item-text a { color: #6B6A63; text-decoration: underline; }
+  p.noise-text { font-size: 14.5px; color: #6B6A63; line-height: 1.7; }
+  p.noise-text a { color: #6B6A63; text-decoration: underline; }
 </style>
 </head>
 <body>
 
   <div class="band-top"><div class="inner">
-    <div class="meta">Research briefs &middot; maintained automatically</div>
-    <h1>One quiet page a week, drawn from whatever the field actually did.</h1>
+    <div class="meta">Sunday &middot; August 23, 2026 &middot; Automated AI pentesting / red-teaming &middot; 3 clusters &middot; 8 sources</div>
+    <h1>The tools built to autonomously hack other systems can be hacked by the systems they attack.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,118 C40,116 80,90 120,66 C150,48 165,42 180,40 C210,38 235,44 260,52 C300,64 335,74 365,80 C395,86 415,88 435,88 C465,88 495,90 525,94 C558,98 585,100 610,100 C635,100 655,99 675,99 C710,100 745,103 780,107 C805,110 825,112 840,114"
+            fill="none" stroke="#2E2C27" stroke-width="1.5" />
+      <circle cx="180" cy="40" r="13" fill="#C6613F" />
+      <circle cx="435" cy="88" r="9" fill="#2E2C27" />
+      <circle cx="610" cy="100" r="6" fill="#B4B3A8" />
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-label">Ship today</div>
+        <div class="act-sentence">Any team running an autonomous pentesting or red-teaming agent can audit it this week for unauthenticated orchestrator APIs and host-network access from worker containers &mdash; the exact path a target used to compromise the operator's machine in ten of twelve tools tested.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Pilot now</div>
+        <div class="act-sentence">Nothing cleared the bar this week.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Watch</div>
+        <div class="act-sentence">OpenAI put a number on what a critical-cyber-capable model costs to run safely, and a single-framework injection audit shows the same old control gap in a new open-source harness.</div>
+      </div>
+    </div>
   </div></div>
 
   <div class="band-bottom"><div class="inner">
 
-    <section class="series">
-      <h2>Skills &amp; Agents Radar</h2>
+    <section class="brief-section">
+      <h2>Act on this</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">MCP went stateless this week, and the cloud vendors said yes before the changelog finished loading.</div>
+            <a class="item-title" href="https://arxiv.org/abs/2606.24496">A pentest target can hack the AI agent hacking it</a>
+            <div class="item-text">A security analysis by Dario Pasquini and three co-authors, revised <a href="https://arxiv.org/abs/2606.24496">on arXiv on August 17</a>, delivers what it calls the first in-depth look at the tools themselves rather than at what they find: the paper shows that <a href="https://arxiv.org/abs/2606.24496">most widely used agentic offensive-security systems share common design flaws that let an active adversary exfiltrate API keys, establish persistent footholds, and fully compromise the operator's machine, even when the agent runs inside a sandboxed container</a>. The mechanism is architectural, not a model failure: several tools, named in the paper as nebula, xalgorix and METATRON, run with no sandboxing at all, while others grant a worker container access to the host network and expose an orchestrator's control API with no authentication, so code execution inside the scan target's decoy service walks straight back into the pentesting platform's own control plane. Across the tools tested, weak segmentation and violated least-privilege let the researchers reach secrets exfiltration, weaponize the agent against arbitrary new targets, and achieve full sandbox escape in ten of twelve cases. The paper pairs the finding with a proposed hardened architecture and a set of design principles meant to close each step of the kill chain at the infrastructure level, which gives any team running one of these platforms a concrete checklist &mdash; network segmentation between worker and orchestrator, authenticated orchestrator APIs, and treating every scan target as a potential attacker of the tool itself &mdash; to work through this week, without waiting on a vendor patch.</div>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="series">
-      <h2>AI Security Digest</h2>
+    <section class="brief-section">
+      <h2>Worth knowing</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-23.html">August 23, 2026</a>
-            <div class="item-text">The tools built to autonomously hack other systems can be hacked by the systems they attack.</div>
+            <a class="item-title" href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI prices out what a dangerous model costs to watch</a>
+            <div class="item-text">OpenAI's Astra pause, previously covered here as an August 7 capability-threshold determination, got a concrete follow-up: <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">the company's own post</a> says it added blanket monitoring to all of Astra's tool-using inference, not just training and evaluation, once it "determined that Astra may have critical cyber capabilities on August 7," and puts <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">the monitoring overhead at roughly 20% of the inference compute being watched</a>. The same post confirms a two-week RL training pause, a still-paused largest planned frontier run, and, per Axios's account of the briefing, that <a href="https://www.axios.com/2026/08/18/openai-pause-astra-preparedness-framework">OpenAI is rewriting its Preparedness Framework now that models are approaching or reaching the critical thresholds it first sketched out in 2023</a>. It is a number for other labs' budgeting conversations, not yet a lever a typical builder can pull.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">Encrypted prompt injection now beats content filters on production AI assistants.</div>
+            <a class="item-title" href="https://arxiv.org/abs/2608.16393">One open-source agent harness, tested for injection, leaks a fifth of the time</a>
+            <div class="item-text">Tencent's Zhuque Lab ran 14,560 controlled indirect-prompt-injection attempts against DeepSeek's new open-source agent framework, DeepSeek Harness, and found <a href="https://arxiv.org/abs/2608.16393">attack success rates reaching 17.0% for a fake-completion attack in text mode and 25.5% for hidden Unicode hidden in a file</a>, arising from ordinary content the agent is meant to read rather than any exotic exploit. The authors are careful to scope the claim &mdash; <a href="https://arxiv.org/abs/2608.16393">the sink tools were simulated and the percentages describe one framework revision, not a universal vulnerability rate for DeepSeek Harness or any provider</a> &mdash; which is exactly why this reads as one data point on a known problem (untrusted tool output flowing into privileged calls unchecked) rather than a new attack class.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Signal vs. noise</h2>
+      <p class="noise-text">A Rust supply-chain attack dominated security headlines this week &mdash; malicious versions of the crate arrayref, <a href="https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns">found in three-quarters of Rust environments, carried a build-time backdoor whose infrastructure overlaps with DPRK-linked campaigns</a> &mdash; but it is a classic compromised-maintainer-account incident with no AI agent on either side of it, offense or defense, and doesn't belong in this beat despite the volume of coverage. Felony Bench, the third-party-harm scoreboard covered here last week, kept resurfacing in searches this window without a single new incident added to its tally.</p>
+    </section>
+
+    <section class="brief-section">
+      <h2>Who to follow</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <span class="item-title">Dario Pasquini, Cracken</span>
+            <div class="item-text">Led the first systematic security analysis of agentic pentesting tools themselves, turning the field's attention from what these agents can break to what can break them.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <span class="item-title">Zonghao Ying and Tencent's Zhuque Lab</span>
+            <div class="item-text">Keep shipping framework-specific injection numbers through their open-source AI-Infra-Guard tooling, this week turning it on DeepSeek's brand-new agent harness within days of its release.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <span class="item-title">Jakub Pachocki, OpenAI</span>
+            <div class="item-text">Personally confirmed the Astra pacing decision and tied it to the July "Pacing the Frontier" letter he signed, turning an open letter's philosophy into a disclosed, costed policy.</div>
           </div>
         </li>
       </ol>
