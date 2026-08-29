@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research briefs</title>
+<title>Skills &amp; Agents Radar — August 29, 2026</title>
 <style>
   @font-face {
     font-family: 'Fraunces';
@@ -13,7 +13,11 @@
     font-display: swap;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #FCFCFB; color: #2E2C27; font-family: -apple-system, "Segoe UI", sans-serif; }
+  body {
+    background: #FCFCFB;
+    color: #2E2C27;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
   .band-top { background: #F9F9F7; border-bottom: 1px solid #E1E1DF; padding: 56px 24px; }
   .band-bottom { background: #FCFCFB; padding: 48px 24px; }
   .inner { max-width: 860px; margin: 0 auto; }
@@ -24,11 +28,41 @@
     font-size: 40px;
     line-height: 1.25;
     max-width: 780px;
+    margin-bottom: 34px;
   }
   @media (max-width: 640px) { h1 { font-size: 30px; } }
 
-  section.series { max-width: 860px; margin: 0 auto 44px auto; }
-  section.series:last-child { margin-bottom: 0; }
+  .drawing { width: 100%; height: auto; display: block; margin-bottom: 30px; }
+
+  .acts {
+    display: flex;
+    gap: 32px;
+  }
+  @media (max-width: 640px) {
+    .acts { flex-direction: column; gap: 20px; }
+  }
+  .act {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #E4E3DC;
+  }
+  .act:first-child { padding-left: 0; border-left: none; }
+  @media (max-width: 640px) {
+    .act { padding-left: 0; border-left: none; padding-top: 16px; border-top: 1px solid #E4E3DC; }
+    .act:first-child { padding-top: 0; border-top: none; }
+  }
+  .act-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2E2C27;
+    margin-bottom: 8px;
+  }
+  .act-sentence { font-size: 14.5px; color: #6B6A63; line-height: 1.5; }
+
+  section.brief-section { max-width: 860px; margin: 0 auto 44px auto; }
+  section.brief-section:last-child { margin-bottom: 0; }
   h2 {
     font-size: 13px;
     font-weight: 600;
@@ -49,58 +83,199 @@
     padding-top: 1px;
   }
   .item-body { flex: 1; }
-  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; text-decoration: none; }
-  .item-title:hover { text-decoration: underline; }
+  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; }
+  a.item-title { text-decoration: none; }
+  a.item-title:hover { text-decoration: underline; }
   .item-text { font-size: 14.5px; color: #6B6A63; line-height: 1.6; }
+  .item-text a { color: #6B6A63; text-decoration: underline; }
 </style>
-</head>
-<body>
+</head><body>
 
   <div class="band-top"><div class="inner">
-    <div class="meta">Research briefs &middot; maintained automatically</div>
-    <h1>One quiet page a week, drawn from whatever the field actually did.</h1>
+    <div class="meta">Saturday &middot; August 29, 2026 &middot; Edition 2 &middot; 27 venues scanned &middot; 15 new finds</div>
+    <h1>A skill that makes agents write less code passed 100,000 stars this week &mdash; and published the correction to its own benchmark.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,112 C30,100 55,80 85,66 C105,58 118,58 130,58 C145,58 155,63 165,68 C175,75 182,78 190,80 C200,84 205,86 210,86 C225,75 240,55 250,42 C265,44 278,48 290,50 C305,53 315,55 325,56 C340,60 350,62 360,64 C372,67 382,68 390,70 C398,72 402,73 405,74 C412,85 418,100 420,110 C450,118 480,120 500,120 C530,119 560,118 580,118 C600,118 615,118 630,116 C650,108 668,100 690,95 C710,92 725,91 740,90 C755,91 775,93 790,95 C805,97 825,99 840,102"
+            fill="none" stroke="#2E2C27" stroke-width="1.5" />
+      <circle cx="85" cy="66" r="11" fill="#2E2C27" />
+      <circle cx="130" cy="58" r="8" fill="#2E2C27" />
+      <circle cx="165" cy="68" r="6" fill="#B4B3A8" />
+      <circle cx="190" cy="80" r="5" fill="#B4B3A8" />
+      <circle cx="250" cy="42" r="13" fill="#C6613F" />
+      <circle cx="290" cy="50" r="9" fill="#2E2C27" />
+      <circle cx="325" cy="56" r="8" fill="#2E2C27" />
+      <circle cx="360" cy="64" r="6" fill="#B4B3A8" />
+      <circle cx="390" cy="70" r="5" fill="#B4B3A8" />
+      <circle cx="405" cy="74" r="5" fill="#B4B3A8" />
+      <circle cx="690" cy="95" r="6" fill="#B4B3A8" />
+      <circle cx="740" cy="90" r="6" fill="#B4B3A8" />
+      <circle cx="790" cy="95" r="5" fill="#B4B3A8" />
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-label">GitHub</div>
+        <div class="act-sentence">Three independent skill repos &mdash; ponytail, archify, and Addy Osmani's agent-skills &mdash; each cleared five figures in fresh stars this week, while Superpowers and Matt Pocock's collection compounded by another 4,700 and 10,500 respectively.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Registries</div>
+        <div class="act-sentence">Smithery folded into Arcade.dev and LobeHub shipped an operator that hires agents from its own 273,000-skill marketplace &mdash; the ecosystem is consolidating into orchestration layers, not just growing its listings.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Forums</div>
+        <div class="act-sentence">Hacker News and Reddit stayed quiet on skills and MCP this window; the sharpest writing came from practitioner blogs arguing that problem decomposition, not code output, is now the scarce skill.</div>
+      </div>
+    </div>
   </div></div>
 
   <div class="band-bottom"><div class="inner">
 
-    <section class="series">
-      <h2>Skills &amp; Agents Radar</h2>
+    <section class="brief-section">
+      <h2>Standouts</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-29.html">August 29, 2026</a>
-            <div class="item-text">A skill that makes agents write less code passed 100,000 stars this week &mdash; and published the correction to its own benchmark.</div>
+            <a class="item-title" href="https://github.com/DietrichGebert/ponytail">A skill that deletes code, benchmarked and self-corrected</a>
+            <div class="item-text">Ponytail makes an agent stop at the first rung of a YAGNI ladder before writing anything, and its README carries a measured result, not just a claim: -54% lines of code, -20% cost and -27% time against a no-skill baseline on real Claude Code sessions editing a live FastAPI/React repo. The maintainer replaced an earlier, flashier "80-94% less code" figure after an issue pointed out the baseline was padded, and the repo has climbed to 103,900 stars.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">MCP went stateless this week, and the cloud vendors said yes before the changelog finished loading.</div>
+            <a class="item-title" href="https://github.com/lobehub/lobehub/discussions/14935">A platform now hires agents on your behalf</a>
+            <div class="item-text">LobeHub's new Chief Agent Operator takes a goal, assembles a team from its own catalog, and runs the work in the cloud around the clock, reporting through Slack, Discord or Telegram instead of a chat window. That catalog is no longer small: the launch announcement puts it at <a href="https://github.com/lobehub/lobehub/discussions/14935">273,000-plus skills and 51,000-plus MCP servers</a>, treating the skill marketplace as raw material for agents that manage other agents.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/addyosmani/agent-skills">A rival skills pack ships its own comparison to the leaders</a>
+            <div class="item-text">Addy Osmani's Agent Skills packages 24 lifecycle skills and four review personas around Google's engineering playbook, and has reached 89,300 stars and 9,600 forks while trending on Trendshift. Rather than let star counts do the talking, the repo ships an explicit comparison doc against Superpowers and Matt Pocock's skills, linking out to <a href="https://www.linkedin.com/pulse/superpowers-vs-agent-skills-faster-shipping-safer-reasoning-om-mishra-dzakf/">a controlled head-to-head experiment</a> rather than asserting superiority.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">4</span>
+          <div class="item-body">
+            <a class="item-title" href="https://arcade.dev/blog/smithery-joins-arcade">One of the mid-size MCP registries gets absorbed</a>
+            <div class="item-text">Smithery, which lets agents browse and connect to <a href="https://smithery.ai/">17,344-plus MCP servers</a> with handled auth and credentials, now carries a banner announcing it is part of Arcade.dev. It is the clearest consolidation signal of the window: infrastructure for connecting agents to tools is starting to concentrate rather than multiply.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/tt-a1i/archify">A skill that draws verifiable architecture diagrams</a>
+            <div class="item-text">Archify turns a repository or a spoken system description into typed, validated JSON that renders as self-contained, interactive HTML diagrams &mdash; five diagram types, before/after comparisons, and export as PNG, SVG or share cards. The repo has reached 21,900 stars and carries a live Trendshift badge, with a worked example tracing a real public repository's runtime architecture down to exact source lines.</div>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="series">
-      <h2>AI Security Digest</h2>
+    <section class="brief-section">
+      <h2>Gaining traction</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-23.html">August 23, 2026</a>
-            <div class="item-text">The tools built to autonomously hack other systems can be hacked by the systems they attack.</div>
+            <a class="item-title" href="https://zplatform.ai/best-ai-tools/best-mcp-servers/">A new MCP directory ranks servers instead of just listing them</a>
+            <div class="item-text">zPlatform.ai's report scores 163 MCP servers on adoption, maintenance, growth, trust and security rather than star count alone, and finds 92 of 163 (56%) are first-party builds taking 98.9% of all download volume. Its founder frames the real question bluntly: <a href="https://zplatform.ai/best-ai-tools/best-mcp-servers/">"did the vendor build it, what credentials does it want, and can you run it anywhere other than your own laptop."</a></div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">Encrypted prompt injection now beats content filters on production AI assistants.</div>
+            <a class="item-title" href="https://github.com/hesreallyhim/awesome-claude-code">The hand-curated Claude Code list keeps growing</a>
+            <div class="item-text">Maintained by an Anthropic team member rather than auto-scraped from GitHub, this awesome-list of skills, agents, statuslines and plugins has reached 53,100 stars and 4,600 forks, with nearly a thousand open resource-submission issues still being triaged.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://mcpmarket.com/tools/skills">A skills aggregator crosses 340,000 listings</a>
+            <div class="item-text">MCP Market's skills directory now reports 340,671 indexed skills, updated within hours of being checked &mdash; another data point in a marketplace tier that keeps re-scraping GitHub faster than any one buyer can evaluate what's inside.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">4</span>
+          <div class="item-body">
+            <a class="item-title" href="https://glama.ai/mcp/servers">The largest MCP index adds another few thousand servers</a>
+            <div class="item-text">Glama's registry, which bills itself as a superset of the official MCP Registry, now lists 79,484 servers updated daily across categories from developer tools to autonomous agents.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://kissmyskills.com/">A paid skills storefront built like a bookstore</a>
+            <div class="item-text">KissMySkills sells 1,097 skill files, prompt packs and agent bundles &mdash; "hand your AI a book, get back a specialist" &mdash; with a 30-day refund guarantee and a 4.9-out-of-5 rating <a href="https://kissmyskills.com/">across 6,430 reviews</a>, evidence that paid, curated skill sales have a real, repeat customer base beyond the free crawler directories.</div>
           </div>
         </li>
       </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Deep cuts</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://aiblewmymind.substack.com/p/claude-code-content-distribution-ai-agent">A content pipeline that runs itself four times a day</a>
+            <div class="item-text">One practitioner built a Claude Code Routine that ingests articles, drafts posts for Reddit, LinkedIn, Instagram and Threads, and tunes its own instructions weekly based on the edits she makes to its drafts. She keeps one deliberate human checkpoint rather than automating it away: <a href="https://aiblewmymind.substack.com/p/claude-code-content-distribution-ai-agent">"I don't publish without reviewing drafts."</a></div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://glama.ai/mcp/servers/clivechung/skillmcp">A skill registry small enough to self-host</a>
+            <div class="item-text">SkillMCP packages 5,900-plus peer-authored skills behind a single containerized MCP server that any compatible agent can search and load on demand, a lighter-weight distribution layer sitting underneath the giant aggregator sites.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Meta reads</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://dev.to/imaginex/skills-required-for-building-ai-agents-in-2026-2ed">Writing code stops being the differentiating skill</a>
+            <div class="item-text">The essay argues that problem shaping, context design and knowing when not to use an agent now separate senior engineers from juniors, not code output, and cites Nicholas Carlini's experiment where <a href="https://dev.to/imaginex/skills-required-for-building-ai-agents-in-2026-2ed">sixteen agents built a 100,000-line Rust C compiler with no human-written code</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://dev.to/muhammad_moeed/claude-code-skills-a-practical-guide-for-2026-3f6p">Skill descriptions are the real trigger mechanism</a>
+            <div class="item-text">A practical walkthrough of skill anatomy draws a pointed comment from a tech lead who rewrote his team's skill descriptions to lead with the exact phrase a user would type: <a href="https://dev.to/muhammad_moeed/claude-code-skills-a-practical-guide-for-2026-3f6p">"skill activation went up dramatically"</a> once collisions across 20-plus installed skills were the actual problem being solved.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Movers</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/obra/superpowers">Superpowers keeps compounding past a quarter-million stars</a>
+            <div class="item-text">Jesse Vincent's skills framework added roughly 4,700 stars this week, reaching 278,400 stars and 24,900 forks, and now lists eleven supported coding agents in its install instructions, from Claude Code to Hermes Agent.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/mattpocock/skills">Matt Pocock's engineering skills post the week's biggest jump</a>
+            <div class="item-text">The repo added about 10,500 stars this week to reach 236,900, the largest single-week gain of any tracked repo, with its newsletter now past 60,000 subscribers according to the README.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Venue watch</h2>
+      <p class="item-text">GitHub carried the real weight this window: five separate skill repositories posted meaningful five- and six-figure star movement in a single week, a pace the registries didn't match. Registries consolidated instead of multiplying &mdash; Smithery folded into Arcade.dev, and zPlatform.ai's new ranked directory pushes back against raw listing counts by scoring MCP servers on trust and maintenance instead. Hacker News, lobste.rs and Reddit produced nothing that cleared a substantive discussion threshold on skills or MCP this window; the sharper writing this week came from practitioner blogs and Substacks rather than forum threads.</p>
     </section>
 
   </div></div>
