@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research briefs</title>
+<title>Skills &amp; Agents Radar — September 5, 2026</title>
 <style>
   @font-face {
     font-family: 'Fraunces';
@@ -13,7 +13,11 @@
     font-display: swap;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #FCFCFB; color: #2E2C27; font-family: -apple-system, "Segoe UI", sans-serif; }
+  body {
+    background: #FCFCFB;
+    color: #2E2C27;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
   .band-top { background: #F9F9F7; border-bottom: 1px solid #E1E1DF; padding: 56px 24px; }
   .band-bottom { background: #FCFCFB; padding: 48px 24px; }
   .inner { max-width: 860px; margin: 0 auto; }
@@ -24,11 +28,41 @@
     font-size: 40px;
     line-height: 1.25;
     max-width: 780px;
+    margin-bottom: 34px;
   }
   @media (max-width: 640px) { h1 { font-size: 30px; } }
 
-  section.series { max-width: 860px; margin: 0 auto 44px auto; }
-  section.series:last-child { margin-bottom: 0; }
+  .drawing { width: 100%; height: auto; display: block; margin-bottom: 30px; }
+
+  .acts {
+    display: flex;
+    gap: 32px;
+  }
+  @media (max-width: 640px) {
+    .acts { flex-direction: column; gap: 20px; }
+  }
+  .act {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #E4E3DC;
+  }
+  .act:first-child { padding-left: 0; border-left: none; }
+  @media (max-width: 640px) {
+    .act { padding-left: 0; border-left: none; padding-top: 16px; border-top: 1px solid #E4E3DC; }
+    .act:first-child { padding-top: 0; border-top: none; }
+  }
+  .act-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2E2C27;
+    margin-bottom: 8px;
+  }
+  .act-sentence { font-size: 14.5px; color: #6B6A63; line-height: 1.5; }
+
+  section.brief-section { max-width: 860px; margin: 0 auto 44px auto; }
+  section.brief-section:last-child { margin-bottom: 0; }
   h2 {
     font-size: 13px;
     font-weight: 600;
@@ -49,72 +83,212 @@
     padding-top: 1px;
   }
   .item-body { flex: 1; }
-  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; text-decoration: none; }
-  .item-title:hover { text-decoration: underline; }
+  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; }
+  a.item-title { text-decoration: none; }
+  a.item-title:hover { text-decoration: underline; }
   .item-text { font-size: 14.5px; color: #6B6A63; line-height: 1.6; }
+  .item-text a { color: #6B6A63; text-decoration: underline; }
 </style>
-</head>
-<body>
+</head><body>
 
   <div class="band-top"><div class="inner">
-    <div class="meta">Research briefs &middot; maintained automatically</div>
-    <h1>One quiet page a week, drawn from whatever the field actually did.</h1>
+    <div class="meta">Saturday &middot; September 5, 2026 &middot; Edition 3 &middot; 34 venues scanned &middot; 17 new finds</div>
+    <h1>Google, Microsoft and Hugging Face published the discovery layer MCP left out, and AWS is already calling it DNS for agents.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 C20,95 40,80 60,65 C75,55 90,50 110,48 C130,50 145,53 150,56 C165,62 178,68 185,72 C200,80 215,85 230,80 C245,72 255,58 265,47 C280,50 292,52 300,53 C312,55 325,57 333,59 C348,58 358,54 365,52 C375,56 388,63 395,68 C402,78 410,90 415,100 C420,106 430,109 440,110 C460,110 480,109 500,110 C520,110 540,111 560,111 C580,111 600,108 615,100 C630,90 650,80 668,75 C685,70 696,68 705,68 C718,68 730,74 745,80 C758,85 765,87 770,88 C785,92 800,96 815,98 C825,99 833,99 840,98"
+            fill="none" stroke="#2E2C27" stroke-width="1.5" />
+      <circle cx="110" cy="48" r="12" fill="#2E2C27" />
+      <circle cx="150" cy="56" r="7" fill="#B4B3A8" />
+      <circle cx="185" cy="72" r="5" fill="#B4B3A8" />
+      <circle cx="265" cy="47" r="12" fill="#2E2C27" />
+      <circle cx="300" cy="53" r="10" fill="#2E2C27" />
+      <circle cx="333" cy="59" r="9" fill="#2E2C27" />
+      <circle cx="365" cy="52" r="8" fill="#2E2C27" />
+      <circle cx="395" cy="68" r="5" fill="#B4B3A8" />
+      <circle cx="460" cy="110" r="5" fill="#B4B3A8" />
+      <circle cx="560" cy="111" r="5" fill="#B4B3A8" />
+      <circle cx="705" cy="68" r="13" fill="#C6613F" />
+      <circle cx="770" cy="88" r="6" fill="#B4B3A8" />
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-label">Registries</div>
+        <div class="act-sentence">Two new marketplaces opened with five-figure listing counts already live, and MCP Market alone added roughly ten thousand skills to its index in seven days.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">GitHub</div>
+        <div class="act-sentence">A cross-source research skill topped GitHub's trending page at 58,000 stars, a YC-backed memory tool proved its numbers on a public benchmark, and Ponytail added 21,000 stars in its fastest week yet.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Forums &amp; long tail</div>
+        <div class="act-sentence">Hacker News stayed quiet on skills and Reddit remains unreadable to this pipeline, but three rival labs found enough common ground to publish a shared spec instead of a forum post.</div>
+      </div>
+    </div>
   </div></div>
 
   <div class="band-bottom"><div class="inner">
 
-    <section class="series">
-      <h2>Skills &amp; Agents Radar</h2>
+    <section class="brief-section">
+      <h2>Standouts</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-09-05.html">September 5, 2026</a>
-            <div class="item-text">Google, Microsoft and Hugging Face published the discovery layer MCP left out, and AWS is already calling it DNS for agents.</div>
+            <a class="item-title" href="https://thenewstack.io/ard-agent-discovery-specification/">A shared way to find tools across registries</a>
+            <div class="item-text">Agentic Resource Discovery (ARD) lets a client search across catalogs for the right MCP server or capability instead of requiring every connection to be wired in ahead of time &mdash; AWS's own engineers describe it as "describe once, discover everywhere." The open, Apache-2.0 v0.91 spec is authored by engineers from Google, Microsoft and Hugging Face, with Cisco, Databricks, GitHub, GoDaddy, Nvidia, Salesforce, ServiceNow and Snowflake helping shape it, <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-welcome-ducklabs-to-the-team-agentic-resource-discovery-ard-and-more-august-31-2026/">per AWS's August 31 Weekly Roundup</a>.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-29.html">August 29, 2026</a>
-            <div class="item-text">A skill that makes agents write less code passed 100,000 stars this week &mdash; and published the correction to its own benchmark.</div>
+            <a class="item-title" href="https://github.com/mvanhorn/last30days-skill">A research skill that hit GitHub's #1 trending slot</a>
+            <div class="item-text">last30days-skill searches Reddit, X, YouTube, Hacker News, Polymarket and arXiv in parallel and synthesizes a cited brief, installing into 50-plus agent hosts from Claude Code to Gemini CLI. It has reached 58,045 stars and 5,045 forks on a direct <a href="https://github.com/mvanhorn/last30days-skill">GitHub pull</a>, with 175 merged pull requests from 52 contributors in its latest release cycle.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">3</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">MCP went stateless this week, and the cloud vendors said yes before the changelog finished loading.</div>
+            <a class="item-title" href="https://github.com/activeloopai/hivemind">A memory tool that mines your agents' work into skills</a>
+            <div class="item-text">Hivemind captures every prompt and tool call across a team's Claude Code, Codex, Cursor and OpenClaw sessions, then mines the traces into shared SKILL.md files that propagate to every teammate's agent. On the public LoCoMo memory benchmark, the YC-backed tool's <a href="https://github.com/activeloopai/hivemind">own published numbers</a> show 25% lower cost, 1.7 times fewer tokens and 31% fewer turns than running with no shared memory.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">4</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/teng-lin/notebooklm-py">An API that turns Google's NotebookLM into an agent skill</a>
+            <div class="item-text">notebooklm-py wraps Google's Gemini Notebook (the product formerly called NotebookLM) in a Python API, CLI and installable skill, exposing bulk downloads and quiz, flashcard and mind-map exports the web app doesn't offer. The unofficial project has reached <a href="https://github.com/teng-lin/notebooklm-py">18,500 stars and 2,500 forks</a>, with a companion MCP server for driving it from Claude Code or Codex.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://mcp.so/skills">A marketplace that gave Claude Skills their own storefront section</a>
+            <div class="item-text">MCP.so already indexes close to 20,000 MCP servers across categories from developer tools to finance, and this window it runs dedicated Skills and Agents sections alongside a live "trending this week" ranking of what the community is actually installing. Its featured-skills list opens with Obra's own brainstorming and systematic-debugging skills, and its <a href="https://mcp.so/servers">servers directory</a> shows real install counts next to each listing rather than star counts alone.</div>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="series">
-      <h2>AI Security Digest</h2>
+    <section class="brief-section">
+      <h2>Gaining traction</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-30.html">August 30, 2026</a>
-            <div class="item-text">OpenAI's own postmortem says better monitoring would have caught its rogue eval agents a day before they reached Hugging Face's servers.</div>
+            <a class="item-title" href="https://agskills.dev">A new aggregator indexing 16,500-plus agent skills</a>
+            <div class="item-text">AGSkills.dev pulls skills straight from GitHub and ranks them by trending, featured and hot-contributor status, already surfacing 16,561 indexed skills with live star counts pulled from repos like <a href="https://agskills.dev">steipete/clawdis (369,500 stars) and obra/superpowers (171,700 stars)</a>.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-23.html">August 23, 2026</a>
-            <div class="item-text">The tools built to autonomously hack other systems can be hacked by the systems they attack.</div>
+            <a class="item-title" href="https://mcpmarket.com/tools/skills">MCP Market's skill count jumped ten thousand in a week</a>
+            <div class="item-text">The auto-indexed directory grew from 340,671 to <a href="https://mcpmarket.com/tools/skills">350,795 listed skills</a> in seven days &mdash; volume from re-scraping GitHub, not a quality signal on its own.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">3</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">Encrypted prompt injection now beats content filters on production AI assistants.</div>
+            <a class="item-title" href="https://glama.ai/mcp/servers">Glama's MCP server index adds another 2,300 servers</a>
+            <div class="item-text">The registry, which bills itself as a superset of the official MCP Registry, grew from 79,484 to <a href="https://glama.ai/mcp/servers">81,811 servers</a> updated daily.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">4</span>
+          <div class="item-body">
+            <a class="item-title" href="https://agskills.dev/en/skills?owner=sickn33">An installer CLI ships 1,400-plus bundled skills</a>
+            <div class="item-text">sickn33's antigravity-awesome-skills collection now shows roughly 36,600 stars per <a href="https://agskills.dev/en/skills?owner=sickn33">AGSkills.dev's index</a>, packaging an installer CLI plus workflow bundles for Claude Code, Cursor, Codex CLI and Gemini CLI.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/gengirish/skills-mcp">One MCP server that exposes 7,000 skills to search</a>
+            <div class="item-text">skills-mcp wraps roughly 7,000 agent skills behind a single search-preview-install MCP server for Cursor, Claude Code, Claude Desktop, Cline and Windsurf, <a href="https://news.ycombinator.com/item?id=49501178">shown on Show HN</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">6</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/glukicov/slideops">A skill that flags slide decks when the code drifts</a>
+            <div class="item-text">SlideOps turns a repository into a slide deck carrying exact line-range and hash references for every claim, so a plain script can tell a moved file from a changed one without a model call, on <a href="https://news.ycombinator.com/item?id=49508735">Show HN at 23 points</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">7</span>
+          <div class="item-body">
+            <a class="item-title" href="https://moadim.io/">A cron scheduler that works across four coding agents</a>
+            <div class="item-text">Moadim.io is a git-backed Rust daemon for scheduling recurring agent routines across Claude, Codex, Hermes and Pi, its <a href="https://news.ycombinator.com/item?id=49571537">Show HN post</a> claiming more than 1,000 daily users.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">8</span>
+          <div class="item-body">
+            <a class="item-title" href="https://www.claudeskillsmarket.com/">A free-forever alternative to the paid skill stores</a>
+            <div class="item-text">Claude Skills Marketplace positions itself against the paid storefronts with <a href="https://www.claudeskillsmarket.com/">37-plus free community skills</a>, skill-engineering courses and guides rather than a subscription.</div>
           </div>
         </li>
       </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Deep cuts</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/K-Dense-AI/claude-skills-mcp">An MCP bridge for skills shut down this week</a>
+            <div class="item-text">K-Dense AI retired its vector-search MCP server for finding Claude skills, its README now stating that native adoption across Cursor, Windsurf, Claude Code and Copilot means <a href="https://github.com/K-Dense-AI/claude-skills-mcp">"there is no longer a need for an MCP bridge to deliver skills to your coding assistant."</a></div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://agent-skill.co">A directory that defines what a good skill looks like</a>
+            <div class="item-text">Agent Skill Index pairs a curated catalog of official and community skills with an explicit quality bar &mdash; clarity, focused scope, safety and at least two proven examples &mdash; <a href="https://agent-skill.co">spotted this run</a> alongside its GitHub companion, awesome-agent-skills.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://www.skillcreator.ai">A native macOS app for the whole skill lifecycle</a>
+            <div class="item-text">SkillCreator ships a Monaco-based editor, six-dimension eval scoring, a dependency graph and a transactional installer with diff preview, still a free beta running <a href="https://www.skillcreator.ai">offline-first</a> rather than as a hosted registry.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Meta reads</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://karozieminski.substack.com/p/claude-guides-code-cowork-skills-workflows">One practitioner mapped the entire Claude product line</a>
+            <div class="item-text">Claude Hub gathers 15-plus guides on Chat, Cowork, Design, Code, Skills and every 2026 release into a single index, pairing each release with a "PM read" and a "critical AI literacy read," updated again <a href="https://karozieminski.substack.com/p/claude-guides-code-cowork-skills-workflows">this week</a> after readers kept "having rather a difficult time finding older articles" they wanted to revisit.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Movers</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/DietrichGebert/ponytail">Ponytail added 21,000 stars in its fastest week yet</a>
+            <div class="item-text">The "laziest senior dev" skill grew from 103,900 to <a href="https://github.com/DietrichGebert/ponytail">125,200 stars</a> in seven days, its biggest single-week gain since launch, while quietly posting a "something's coming" waitlist banner pointing at a standalone ponytail.dev.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Venue watch</h2>
+      <p class="item-text">Reddit (r/ClaudeAI, r/ClaudeCode, r/LocalLLaMA, r/mcp, r/ExperiencedDevs) remains unscannable this run &mdash; a dedicated pass tried old.reddit.com paths and search-operator workarounds and still came back empty, so treat that blind spot as ongoing. Hacker News carried volume but little that cleared a real threshold: of more than a dozen skill and MCP posts this week, the strongest topped out at 23 points. Registries did the heavy lifting instead &mdash; two new marketplaces opened with real listing counts already live, MCP Market and Glama each added a small registry's worth of new entries, and GitHub kept producing the sharpest individual finds.</p>
     </section>
 
   </div></div>
