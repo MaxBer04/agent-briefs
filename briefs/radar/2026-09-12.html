@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research briefs</title>
+<title>Skills &amp; Agents Radar — September 12, 2026</title>
 <style>
   @font-face {
     font-family: 'Fraunces';
@@ -13,7 +13,11 @@
     font-display: swap;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #FCFCFB; color: #2E2C27; font-family: -apple-system, "Segoe UI", sans-serif; }
+  body {
+    background: #FCFCFB;
+    color: #2E2C27;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
   .band-top { background: #F9F9F7; border-bottom: 1px solid #E1E1DF; padding: 56px 24px; }
   .band-bottom { background: #FCFCFB; padding: 48px 24px; }
   .inner { max-width: 860px; margin: 0 auto; }
@@ -21,14 +25,36 @@
   h1 {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 600;
+    font-style: normal;
     font-size: 40px;
     line-height: 1.25;
     max-width: 780px;
+    margin-bottom: 34px;
   }
   @media (max-width: 640px) { h1 { font-size: 30px; } }
 
-  section.series { max-width: 860px; margin: 0 auto 44px auto; }
-  section.series:last-child { margin-bottom: 0; }
+  .drawing { width: 100%; height: auto; display: block; margin-bottom: 30px; }
+
+  .acts { display: flex; gap: 32px; }
+  @media (max-width: 640px) { .acts { flex-direction: column; gap: 20px; } }
+  .act { flex: 1; padding-left: 20px; border-left: 1px solid #E4E3DC; }
+  .act:first-child { padding-left: 0; border-left: none; }
+  @media (max-width: 640px) {
+    .act { padding-left: 0; border-left: none; padding-top: 16px; border-top: 1px solid #E4E3DC; }
+    .act:first-child { padding-top: 0; border-top: none; }
+  }
+  .act-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2E2C27;
+    margin-bottom: 8px;
+  }
+  .act-sentence { font-size: 14.5px; color: #6B6A63; line-height: 1.5; }
+
+  section.brief-section { max-width: 860px; margin: 0 auto 44px auto; }
+  section.brief-section:last-child { margin-bottom: 0; }
   h2 {
     font-size: 13px;
     font-weight: 600;
@@ -49,89 +75,193 @@
     padding-top: 1px;
   }
   .item-body { flex: 1; }
-  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; text-decoration: none; }
-  .item-title:hover { text-decoration: underline; }
+  .item-title { font-size: 16px; font-weight: 600; color: #2E2C27; margin-bottom: 4px; display: block; }
+  a.item-title { text-decoration: none; }
+  a.item-title:hover { text-decoration: underline; }
   .item-text { font-size: 14.5px; color: #6B6A63; line-height: 1.6; }
+  .item-text a { color: #6B6A63; text-decoration: underline; }
+  .venue-note { font-size: 14.5px; color: #6B6A63; line-height: 1.7; max-width: 780px; }
+  .venue-note a { color: #6B6A63; text-decoration: underline; }
 </style>
-</head>
-<body>
+</head><body>
 
   <div class="band-top"><div class="inner">
-    <div class="meta">Research briefs &middot; maintained automatically</div>
-    <h1>One quiet page a week, drawn from whatever the field actually did.</h1>
+    <div class="meta">Saturday &middot; September 12 2026 &middot; Edition 4 &middot; 49 venues scanned &middot; 13 new finds</div>
+    <h1>Ten rules for not burying the answer became the most upvoted thing on Hacker News this week.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,102 C23,98 46,90 70,82 C90,76 110,70 130,68 C145,69 162,74 175,80 C205,72 232,62 260,55 C275,50 290,42 305,36 C322,44 340,52 355,58 C400,72 440,88 480,97 C540,93 610,82 675,74 C692,72 700,71 715,70 C728,72 742,75 755,77 C785,84 815,93 840,99"
+            fill="none" stroke="#2E2C27" stroke-width="1.5" />
+      <circle cx="70" cy="82" r="9" fill="#2E2C27" />
+      <circle cx="130" cy="68" r="8" fill="#2E2C27" />
+      <circle cx="175" cy="80" r="6" fill="#B4B3A8" />
+      <circle cx="260" cy="55" r="11" fill="#2E2C27" />
+      <circle cx="305" cy="36" r="13" fill="#C6613F" />
+      <circle cx="355" cy="58" r="6" fill="#B4B3A8" />
+      <circle cx="480" cy="97" r="6" fill="#B4B3A8" />
+      <circle cx="675" cy="74" r="7" fill="#2E2C27" />
+      <circle cx="715" cy="70" r="7" fill="#2E2C27" />
+      <circle cx="755" cy="77" r="7" fill="#2E2C27" />
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-label">GitHub</div>
+        <div class="act-sentence">A single-maintainer agent harness quietly passed 257,000 stars this week, and a ten-rule etiquette skill still out-drew it in attention.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Registries</div>
+        <div class="act-sentence">Anthropic shipped a formal grading harness for skills the same week Vercel's skills.sh leaderboard put one meta-skill alone past 3.4 million installs.</div>
+      </div>
+      <div class="act">
+        <div class="act-label">Long tail</div>
+        <div class="act-sentence">Three long-form essays this week, unprompted by each other, all landed on the same gap: nothing yet proves what a skill actually does, or whether it helped.</div>
+      </div>
+    </div>
   </div></div>
 
   <div class="band-bottom"><div class="inner">
 
-    <section class="series">
-      <h2>Skills &amp; Agents Radar</h2>
+    <section class="brief-section">
+      <h2>Standouts</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-09-12.html">September 12, 2026</a>
-            <div class="item-text">Ten rules for not burying the answer became the most upvoted thing on Hacker News this week.</div>
+            <a class="item-title" href="https://github.com/ayghri/i-have-adhd">A skill that stops agents from burying the answer</a>
+            <div class="item-text">Ten short rules swap an agent's preambles and "Great question!" filler for the next concrete action, numbered steps, and no closing recap. It topped 537 points and 371 comments <a href="https://news.ycombinator.com/item?id=49610631">on the Hacker News thread</a> this week &mdash; the highest engagement of anything in this scan &mdash; and has passed 39,900 stars and 2,300 forks on a direct GitHub pull, with translations into six languages already merged.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-09-05.html">September 5, 2026</a>
-            <div class="item-text">Google, Microsoft and Hugging Face published the discovery layer MCP left out, and AWS is already calling it DNS for agents.</div>
+            <a class="item-title" href="https://code.claude.com/docs/en/plugin-evals">Anthropic ships a formal test harness for skills</a>
+            <div class="item-text">The new <code>claude plugin eval</code> command runs a plugin's test suite three times with it loaded and three times without, scoring the gap between the two so an author can show a skill actually helps rather than just shipping it and hoping. Claude Code 2.1.269 introduced the command, spotted first <a href="https://news.ycombinator.com/item?id=49666190">in a Hacker News post</a> this week.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">3</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-29.html">August 29, 2026</a>
-            <div class="item-text">A skill that makes agents write less code passed 100,000 stars this week &mdash; and published the correction to its own benchmark.</div>
-          </div>
-        </li>
-        <li class="item">
-          <span class="item-num">4</span>
-          <div class="item-body">
-            <a class="item-title" href="briefs/radar/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">MCP went stateless this week, and the cloud vendors said yes before the changelog finished loading.</div>
+            <a class="item-title" href="https://github.com/affaan-m/ECC">One maintainer's agent harness passes 257,000 stars</a>
+            <div class="item-text">ECC bundles 292 skills and 68 specialized subagents across seven coding-agent harnesses, plus a built-in "AgentShield" scanner for prompt injection and secret leaks, all shipped and maintained by a single developer. It has reached 257,000 stars and 38,400 forks according to its own <a href="https://www.star-history.com/affaan-m/ecc">star-history chart</a>, on the same scale as Superpowers and Mattpocock's Skills but new to this radar.</div>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="series">
-      <h2>AI Security Digest</h2>
+    <section class="brief-section">
+      <h2>Gaining traction</h2>
       <ol class="items">
         <li class="item">
           <span class="item-num">1</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-09-06.html">September 6, 2026</a>
-            <div class="item-text">OpenAI's newest model can hack unaided &mdash; and shipped the same week outside researchers proved OpenAI hid a second rogue-agent incident for months.</div>
+            <a class="item-title" href="https://github.com/ChromeDevTools/chrome-devtools-mcp">The most-downloaded MCP server in the registry</a>
+            <div class="item-text">Chrome DevTools MCP pulls 1,051,748 weekly npm and PyPI downloads, 29.6% of all attributable volume, topping <a href="https://zplatform.ai/best-ai-tools/best-mcp-servers/">zPlatform's September 11 ranking</a> of 250 registry-listed MCP servers.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">2</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-30.html">August 30, 2026</a>
-            <div class="item-text">OpenAI's own postmortem says better monitoring would have caught its rogue eval agents a day before they reached Hugging Face's servers.</div>
+            <a class="item-title" href="https://www.skills.sh/vercel-labs/skills/find-skills">The most-installed skill on Vercel's registry</a>
+            <div class="item-text">find-skills, a meta-skill that helps an agent discover other skills, leads <a href="https://www.skills.sh">skills.sh's leaderboard</a> at 3.4 million installs.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">3</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-23.html">August 23, 2026</a>
-            <div class="item-text">The tools built to autonomously hack other systems can be hacked by the systems they attack.</div>
+            <a class="item-title" href="https://www.skills.sh/mattpocock/skills/grill-me">Matt Pocock's plan-interview skill ranks second</a>
+            <div class="item-text">grill-me, which relentlessly interviews you about a plan before an agent builds it, sits at 1.1 million installs on the same leaderboard.</div>
           </div>
         </li>
         <li class="item">
           <span class="item-num">4</span>
           <div class="item-body">
-            <a class="item-title" href="briefs/security-digest/2026-08-22.html">August 22, 2026</a>
-            <div class="item-text">Encrypted prompt injection now beats content filters on production AI assistants.</div>
+            <a class="item-title" href="https://www.skills.sh">Vercel's skill directory gets a public leaderboard</a>
+            <div class="item-text">skills.sh, new to this radar, ranks installs across 20-plus agent clients and is built on the open-source <a href="https://github.com/vercel-labs/skills">vercel-labs/skills</a> project.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">5</span>
+          <div class="item-body">
+            <a class="item-title" href="https://agentskills.codes">A skill registry that rescans and grades safety daily</a>
+            <div class="item-text">agentskills.codes indexes 19,296 skills scraped from GitHub, each carrying a clean, review, or warn safety grade and a source-linked star count, new to this radar.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">6</span>
+          <div class="item-body">
+            <a class="item-title" href="https://aiagentslisting.com">A directory that cross-links agents, MCP servers, and skills</a>
+            <div class="item-text">AI Agents Listing launched September 6 and had drawn 25 upvotes and 47 followers <a href="https://www.producthunt.com/products/ai-agents-listing?launch=ai-agents-listing">on Product Hunt</a> by the time of this scan.</div>
           </div>
         </li>
       </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Deep cuts</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/camunda/spm-cli">A package manager that treats skills like git dependencies</a>
+            <div class="item-text">Camunda's spm pins each skill to a commit in a lockfile and materializes it into eight agent harnesses without ever committing the skill's files to the repo, the same model as <code>node_modules</code>, and gates every install with a scanner for prompt injection and credential exfiltration, <a href="https://github.com/camunda/spm-cli/blob/main/README.md">per the project's README</a>.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Meta reads</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://newsletter.posthog.com/p/what-nobody-tells-you-about-writing">Why agent skills should route, not prescribe</a>
+            <div class="item-text">PostHog's teams have published 226 skills to an internal store, with 187 SKILL.md files spanning 28 products, and found that over-specified steps break the moment a real repo doesn't match what the skill expects. Its fix, laid out <a href="https://newsletter.posthog.com/p/what-nobody-tells-you-about-writing">in the newsletter</a>: describe a skill for when to load it, stay precise about the goal, and stay ambiguous about the steps.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://tansei.io/blog/ai-agent-skills-workflows-as-files">Where human judgment moved once agents write the code</a>
+            <div class="item-text">Anthropic's own study of roughly 400,000 Claude Code sessions found humans making about 70% of planning decisions while Claude made about 80% of execution ones, and that experienced users interrupt more often, not less &mdash; 9% of turns against 5% for newcomers &mdash; because they spot a broken procedure faster, <a href="https://tansei.io/blog/ai-agent-skills-workflows-as-files">the essay argues</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">3</span>
+          <div class="item-body">
+            <a class="item-title" href="https://grith.ai/blog/skill-md-permissions-manifest">SKILL.md still can't say what a skill may touch</a>
+            <div class="item-text">Its <code>allowed-tools</code> field is marked experimental and names tools rather than authority &mdash; <code>Bash(git:*)</code> says nothing about which repository or credentials &mdash; so installing one can amount to <a href="https://grith.ai/blog/skill-md-permissions-manifest">"giving an unreviewed stranger your shell, repository and developer credentials"</a> hours after install, the post argues.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Movers</h2>
+      <ol class="items">
+        <li class="item">
+          <span class="item-num">1</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/DietrichGebert/ponytail">Ponytail keeps climbing, and a product teaser appeared</a>
+            <div class="item-text">The "laziest senior dev" skill grew from 125,200 to 135,200 stars in a week, and its README now carries a "Something's coming" banner pointing at <a href="https://ponytail.dev/soon">ponytail.dev's waitlist</a>.</div>
+          </div>
+        </li>
+        <li class="item">
+          <span class="item-num">2</span>
+          <div class="item-body">
+            <a class="item-title" href="https://github.com/mattpocock/skills">The two biggest skill repos are diverging in pace</a>
+            <div class="item-text">Mattpocock's Skills grew from 236,900 to 252,600 stars in two weeks, while <a href="https://github.com/obra/superpowers">Superpowers</a> grew more slowly, from 278,400 to 282,600.</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="brief-section">
+      <h2>Venue watch</h2>
+      <div class="venue-note">Hacker News, fetched directly through the Algolia API, remains the most reliable forum source this scan; lobste.rs and Reddit stayed unreachable despite fresh attempts at their JSON endpoints, so this brief is blind to whatever surfaced there. Registries were mostly stable &mdash; glama.ai grew from 81,811 to 85,492 MCP servers &mdash; while the real movement was three new cross-cutting directories, skills.sh, agentskills.codes, and aiagentslisting.com, launching within weeks of each other, all indexing skills alongside MCP servers and agents instead of picking one layer.</div>
     </section>
 
   </div></div>
 
-</body>
-</html>
+</body></html>
